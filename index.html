@@ -1,9 +1,27 @@
-<!DOCTYPE html>
-<html>
-  <title>
-    儒信集团
-  </title>
-  <body>
-    <h1>Welcome to Ruxin Group!</h1>
-  </body>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>九九乘法表</title>
+ 
+<script language="javascript" >
+	function ok()  //定义ok()方法
+	{
+		var i;//定义变量
+		var j;
+		for(i=1;i<=9;i++)
+		{
+			for(j=1;j<=i;j++)
+			{
+				document.write(j+"*"+i+"="+i*j+"   ");//打印输出
+			}
+			document.write("<br>");//换行
+		}
+	}
+</script>
+</head>
+ 
+<body>
+ <input type="button" name="99table" value="99table" οnclick="ok()" /><!--单机时调用ok()方法-->
+</body>
 </html>
