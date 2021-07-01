@@ -23,6 +23,24 @@
  
 <body>
  <input type="button" name="99table" value="99table" οnclick="ok()" /><!--单机时调用ok()方法-->
+	
+<form action="/server_url" method="post" οnsubmit="return beforeSubmit()">
+    ID：<input id="username" type="text" name="username" />
+    Password：<input id="password" type="password" name="password" />
+    <input type="submit" value="Submit" />
+</form>
+<script type="text/javascript">
+    function beforeSubmit() {
+        var username = document.getElementById('username').value;
+        var password = document.getElementById('password').value;
+        if (username.length < 6 || password.length < 6) {
+            alert('格式不正确！');
+            return false;
+        } else {
+            return true;
+        }
+    }
+</script>
 <menu>
 <command type="command">Click Me!</command>
 </menu>
